@@ -11,7 +11,7 @@ const port = process.env.PORT || 3001;
 
 const io = new Server(server, {
     cors: {
-        origin: "https://artemkhn.github.io/Personal_Chat_Project",
+        origin: "http://localhost:3000",
         methods: ["GET", "POST"],
     },
 });
