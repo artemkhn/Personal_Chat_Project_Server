@@ -11,7 +11,7 @@ const port = process.env.PORT || 3001;
 
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://quiet-inlet-36677.herokuapp.com/",
         methods: ["GET", "POST"],
     },
 });
