@@ -7,9 +7,11 @@ app.use(cors());
 
 const server = http.createServer(app);
 
+const port = process.env.PORT || 3001;
+
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://artemkhn.github.io/Personal_Chat_Project/",
         methods: ["GET", "POST"],
     },
 });
@@ -27,4 +29,4 @@ io.on("connection", (socket) => {
     })
 });
 
-server.listen(3001);
+server.listen(port);
